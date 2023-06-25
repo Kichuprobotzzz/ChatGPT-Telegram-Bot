@@ -1,0 +1,17 @@
+env:
+  # Add your environment variables here if needed
+  - KEY: VALUE
+
+build:
+  # Specify the build command or script to run before deploying
+  - command: npm install
+
+publish:
+  # Specify the directory or files to be published
+  - name: "TelegramBot"
+    path: "/path/to/TelegramBot"
+
+routes:
+  # Specify the route to access your application
+  - path: /
+    dest: "TelegramBot/index.js"
